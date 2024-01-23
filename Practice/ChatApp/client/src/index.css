@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+    background-color: rgb(140 161 188);
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 60px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header ul li {
+    margin-left: 20px;
+}
+
+.header ul li a {
+    display: flex;
+    align-items: center;
+}
+
+.header ul li a:hover {
+    color: #777;
+}
+
+.header ul li a svg {
+    margin-right: 5px;
+}
+
+.container2 {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+    appearance: button;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn svg {
+    margin-right: 8px;
+}
+
+.btn-reverse {
+    background: #fff;
+    color: #000;
+}
+
+.btn-block {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    transform: scale(0.98);
+}
+
+.h85vh {
+    height: 85vh;
+}
+.h76vh {
+    height: 72vh;
+}
+.h69vh {
+    height: 69vh;
+}
+.h10vh {
+    height: 10vh;
+}
+.h8vh {
+    height: 8vh;
+}
+.h15vh {
+    height: 15vh;
+}
+
+input:focus-visible {
+    outline-width: 0px;
+}
+.contacts {
+    display: block;
+    align-items: start !important;
+}
+.messages div {
+    min-height: 40px;
+    max-width: fit-content;
+    margin-bottom: 2%;
+    border-radius: 12px;
+    overflow-wrap: break-word;
+    padding: 2%;
+}
+.left {
+    color: white;
+    background-color: #333;
+    margin-left: 1%;
+    margin-right: 15%;
+    border-bottom-left-radius: 0px !important;
+    text-align: left;
+    padding-left: 3% !important;
+}
+.right {
+    background-color: #1187be;
+    margin-left: auto;
+    margin-right: 1%;
+    border-bottom-right-radius: 0px !important;
+    text-align: right;
+    padding-right: 3% !important;
+    width: 80%;
+}
+
+/* width */
+.messages::-webkit-scrollbar {
+    width: 7px;
+    /* display: none; */
+}
+.contacts::-webkit-scrollbar {
+    width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+    /*  background */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    /*  scrollbar */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+    border-radius: 100px;
+    /*  scrollbar hover */
+}

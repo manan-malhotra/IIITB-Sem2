@@ -36,7 +36,7 @@ function Dashboard() {
     	<>
 			<section className='heading'>
 			<h1>
-				Welcome {user && user.name.toUpperCase()[0] + user.name.substr(1)}
+				Welcome {user && user.name && user.name.toUpperCase()[0] + user.name.substr(1)}
 			</h1>
 			<p>Goals Dashboard</p>
 			</section>
